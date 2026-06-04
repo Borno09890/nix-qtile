@@ -59,6 +59,8 @@
     wget
   ];
 
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+
   programs.mtr.enable = true;
   programs.gnupg.agent = {
     enable = true;
