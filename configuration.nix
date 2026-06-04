@@ -23,13 +23,6 @@
 
   time.timeZone = "Asia/Dhaka";
 
-  i18n.defaultLocale = "en_US.UTF-8";
-  console = {
-    font = "Lat2-Terminus16";
-    keyMap = "us";
-    useXkbConfig = true;
-  };
-
   services.xserver = {
     enable = true;
     windowManager.qtile.enable = true;

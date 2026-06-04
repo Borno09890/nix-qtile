@@ -37,6 +37,7 @@
               nix-flatpak.homeManagerModules.nix-flatpak
               ./flatpak.nix
             ];
+            home.stateVersion = "24.05";
           };
         }
       ];
