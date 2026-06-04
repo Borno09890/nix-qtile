@@ -45,12 +45,28 @@
     extraGroups = ["wheel" "video"];
     packages = with pkgs; [
       zed-editor
+      thunar
+      thunar-archive-plugin
+      thunar-volman
+      thunar-media-tags-plugin
+      neovim
+      git
+      curl
+      vimPlugins.LazyVim
+      alacritty
+      rofi
+      alejandra
+      nixd
+      x11basic
+      xwallpaper
     ];
   };
 
   environment.systemPackages = with pkgs; [
-    vim
     wget
+    gtk3-x11
+    qt6
+    qt6ct
   ];
 
   nix.settings.experimental-features = ["nix-command" "flakes"];
