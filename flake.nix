@@ -15,9 +15,8 @@
     nixpkgs,
     home-manager,
     nix-flatpak,
-    inputs,
     ...
-  }: let
+  } @ inputs: let
     system = "x86_64-linux";
   in {
     nixosConfigurations.nix = nixpkgs.lib.nixosSystem {

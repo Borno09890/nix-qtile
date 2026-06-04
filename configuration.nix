@@ -6,6 +6,7 @@
 }: {
   imports = [
     ./hardware-configuration.nix
+    ./flatpak.nix
   ];
   boot.loader.grub = {
     enable = true;
